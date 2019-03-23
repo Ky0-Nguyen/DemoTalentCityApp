@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
     height: '100%',
     paddingBottom: 50,
     alignItems: 'center',
-    justifyContent: 'center',
     paddingTop: Platform.OS ==='ios' ? 20 :0
   },
   container: {

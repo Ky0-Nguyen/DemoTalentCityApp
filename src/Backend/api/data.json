@@ -28,21 +28,21 @@
                "start_time": 1553392800,
                "duration" : 120,
                "location" : "Halong Bay",
-               "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+               "description": "You 1 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
               },
               {
                "id" : "1" ,  
                "start_time": 1553392800,
                "duration" : 120,
                "location" : "Halong Bay",
-               "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+               "description": "You 1 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
               },
               {
                "id" : "2" ,  
                "start_time": 1553392800,
                "duration" : 120,
                "location" : "Halong Bay",
-               "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+               "description": "You 1 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
               }
            ]
          },
@@ -52,28 +52,28 @@
            "start_time": 1553400000,
            "duration" : 120,
            "location" : "Halong Bay",
-           "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+           "description": "You 2 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
            "preparation_needed" : [
             {
              "id" : "0" ,  
              "start_time": 1553392800,
              "duration" : 120,
              "location" : "Halong Bay",
-             "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+             "description": "You 2 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
             },
             {
              "id" : "1" ,  
              "start_time": 1553392800,
              "duration" : 120,
              "location" : "Halong Bay",
-             "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+             "description": "You 2 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
             },
             {
              "id" : "2" ,  
              "start_time": 1553392800,
              "duration" : 120,
              "location" : "Halong Bay",
-             "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+             "description": "You 2 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
             }
          ]
          },
@@ -90,21 +90,21 @@
                 "start_time": 1553392800,
                 "duration" : 120,
                 "location" : "Halong 3",
-                "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+                "description": "You 3 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
                },
                {
                 "id" : "1" ,  
                 "start_time": 1553392800,
                 "duration" : 120,
                 "location" : "Halong 3",
-                "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+                "description": "You 3 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
                },
                {
                 "id" : "2" ,  
                 "start_time": 1553392800,
                 "duration" : 120,
                 "location" : "Halong 3",
-                "description": "You can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
+                "description": "You 3 can design the app anyway you like, but the mock above may give you some idea or inspiration to start with.",
                }
             ]
           }

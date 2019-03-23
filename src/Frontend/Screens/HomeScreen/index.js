@@ -53,11 +53,20 @@ class HomeScreen extends Component {
   }
 
   onSelecrItem = (itemSelected) => {
-    this.setState({ itemSelected : data[itemSelected] })
+    let itemDateSelected = {}
+    if(data[itemSelected].equipment_needed.length !==0 ) {
+        itemDateSelected =  data[itemSelected].equipment_needed[0]
+    } else {
+        itemDateSelected = []
+    }
+    this.setState({ 
+      itemSelected : data[itemSelected] ,
+      itemDateSelected
+    })
   }
 
-  onChangeDate =  (itemDateSelected) => {
-    this.setState({ itemDateSelected })
+  onChangeDate =  (iIndex) => {
+    this.setState({ itemDateSelected : data[0].equipment_needed[iIndex] })
   }
 
   render () {
@@ -70,6 +79,7 @@ class HomeScreen extends Component {
         gotoDetail={gotoDetail}
         clientState={clientState}
         itemSelected={itemSelected}
+        onChangeDate={this.onChangeDate}
         onSelecrItem={this.onSelecrItem}
         navigation={this.props.navigation}
         itemDateSelected={itemDateSelected}

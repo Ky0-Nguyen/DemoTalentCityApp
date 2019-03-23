@@ -6,17 +6,34 @@ import ClientCell from './ClientCell'
 import Swiper from 'react-native-swiper';
 
 
-const BottomComponent = ({ data, gotoDetail, itemSelected, itemDateSelected }) => (
+const BottomComponent = ({ data, gotoDetail, onChangeDate,itemSelected,  itemDateSelected }) => (
     <View style={styles.container}>
         <View style={styles.containerHeader}>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.txtButton}>{`<`}</Text>
+          <TouchableOpacity 
+            disabled={Number(itemDateSelected.id) === 0}
+            style={styles.button} 
+            onPress={() => {
+              const iINdex  =  Number(itemDateSelected.id) - 1
+              onChangeDate(iINdex)
+            }} > 
+            {
+              Number(itemDateSelected.id) !== 0 && <Text style={styles.txtButton}>{`<`}</Text>
+            }
           </TouchableOpacity>
 
           <Text style={styles.txtTime}>{`Ngày ${Number(itemDateSelected.id) +1}`}</Text>
 
-          <TouchableOpacity style={[styles.button, { alignItems: 'flex-end' }]}>
-            <Text style={styles.txtButton}>{`>`}</Text>
+          <TouchableOpacity
+            disabled={Number(itemDateSelected.id) ===  itemDateSelected.preparation_needed.length - 1}
+            onPress={()=>{
+              const iINdex  =  Number(itemDateSelected.id || 0) + 1
+              onChangeDate(iINdex)
+            }} 
+            style={[styles.button, { alignItems: 'flex-end' }]}
+            >
+            {
+               Number(itemDateSelected.id) <  itemDateSelected.preparation_needed.length - 1 &&  <Text style={styles.txtButton}>{`>`}</Text>
+            }
           </TouchableOpacity>
         </View>
         <View style={styles.containerContent}>
@@ -49,7 +66,6 @@ const styles = StyleSheet.create({
   },
   button: {
     width: width(25),
-    backgroundColor: 'red',
   },
   txtTime : {
     fontSize: 17,

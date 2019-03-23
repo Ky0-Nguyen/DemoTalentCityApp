@@ -10,7 +10,7 @@ import TopComponent from './Components/TopComponent'
 import BottomComponent from './Components/BottomComponent'
 
 
-export const HomeView = ({ navigation, onSelecrItem ,itemSelected,itemDateSelected, data,clientState, gotoDetail }) => {
+export const HomeView = ({ navigation,onChangeDate, onSelecrItem ,itemSelected,itemDateSelected, data,clientState, gotoDetail }) => {
   return (
     <BaseView
       isHeader={false}
@@ -25,12 +25,18 @@ export const HomeView = ({ navigation, onSelecrItem ,itemSelected,itemDateSelect
           itemSelected={itemSelected}
           onSelecrItem={onSelecrItem}
           />
-        <BottomComponent 
-          data={data} 
-          gotoDetail={gotoDetail}
-          itemSelected={itemSelected}
-          itemDateSelected={itemDateSelected}
-          />
+          {
+            itemDateSelected.preparation_needed &&
+            itemDateSelected.preparation_needed.length  !== 0&&
+              <BottomComponent 
+                data={data} 
+                gotoDetail={gotoDetail}
+                itemSelected={itemSelected}
+                onChangeDate={onChangeDate}
+                itemDateSelected={itemDateSelected}
+                />
+          }
+        
       </View>
     </BaseView>
   )
